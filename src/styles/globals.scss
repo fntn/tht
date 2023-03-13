@@ -1,0 +1,24 @@
+@import 'vanilla-framework';
+@include vanilla;
+
+.p-card--blog-post {
+  border-top: 3px solid #a87ca0;
+  display: flex;
+  flex-direction: column;
+
+  & > .p-card__header {
+    border: none;
+    padding-bottom: .5rem;
+  }
+
+  & > .p-card__content {
+    border-top: 1px dotted $color-mid-light;
+    padding: 1rem 0 0.5rem;
+  }
+
+  & > .p-card__footer {
+    border-top: 1px dotted $color-mid-light;
+    padding-top: 1rem;
+    margin: auto 0 0;
+  }
+}
